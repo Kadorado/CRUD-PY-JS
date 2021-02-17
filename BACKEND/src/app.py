@@ -15,9 +15,6 @@ CORS(app)
 db = mongo.db.user
 
 
-
-
-
 @app.route("/users", methods=["POST"])
 def createUser():
     id = db.insert({
