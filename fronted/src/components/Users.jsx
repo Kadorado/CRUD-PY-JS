@@ -52,7 +52,7 @@ export default function Users() {
     const response = await fetch(`${API}/users`);
     const data = await response.json();
     setUsers(data);
-  };
+    };
 
   useEffect(() => {
     getUsers();
